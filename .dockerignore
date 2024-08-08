@@ -1,0 +1,10 @@
+*
+
+!apps
+!apps/**/Dockerfile
+!apps/**/.gitignore
+!libs
+!libs/**/.gitignore
+!Cargo.lock
+!Cargo.toml
+!justfile

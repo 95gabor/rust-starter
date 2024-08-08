@@ -1,0 +1,9 @@
+services:
+  sample:
+    build:
+      target: development
+    volumes:
+      - ./apps/sample:/usr/src/sample/apps/sample
+
+volumes:
+  database:

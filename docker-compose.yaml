@@ -1,0 +1,23 @@
+services:
+  sample:
+    build:
+      context: .
+      dockerfile: ./apps/sample/Dockerfile
+    environment:
+      DATABASE_URL: postgres://${DATABASE_USER}:${DATABASE_PASSWORD}@database/${DATABASE_DB}
+    ports:
+     - 7878:7878
+
+  database:
+    image: postgres:16.3-alpine3.20
+    environment:
+      POSTGRES_DB: $DATABASE_DB
+      POSTGRES_USER: $DATABASE_USER
+      POSTGRES_PASSWORD: $DATABASE_PASSWORD
+    volumes:
+      - database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  database:

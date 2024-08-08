@@ -1,0 +1,17 @@
+[package]
+name = "sample"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gábor Pichner <95gabor@gmail.com>"]
+
+[dependencies]
+actix-web = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sea-orm = { workspace = true }
+sea-orm-migration = { workspace = true }
+dotenv = { workspace = true }
+actix-rt = { workspace = true }
+async-trait = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }

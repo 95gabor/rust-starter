@@ -1,0 +1,16 @@
+*
+
+!apps
+!apps/**
+!libs
+!libs/**
+
+!.dockerignore
+!.env.example
+!.gitignore
+!Cargo.toml
+!Cargo.lock
+!docker-compose.yaml
+!docker-compose.override.yaml
+!justfile
+!README.md
